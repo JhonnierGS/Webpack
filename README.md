@@ -116,11 +116,52 @@ npx webpack --mode development
 ```
 - La diferencia radica que el modo development deja el código mas legible para los desarrolladores pero con comentarios, el modo production deja el código comprimido y mas limpio para usarse.
 
+<h2>⚙ Configuracion de webpack.config.js</h2>
+  
+  - El archivo de configuración nos va ayudar a poder establecer la configuración y elementos que vamos a utilizar
+  - Para poder crear el archivo de configuración en la raíz del proyecto creamos un archivo llamado **webpack.config.js**
+  - En el mismo debemos decir
+    - El punto de entrada
+    - Hacia a donde a enviar la configuración de nuestro proyecto
+    - Las extensiones que vamos usar 
 
+```javascript
+const path = require('path');
 
+module.exports = {
+  // Entry nos permite decir el punto de entrada de nuestra aplicación
+  entry: "./src/index.js",
+  // Output nos permite decir hacia dónde va enviar lo que va a preparar webpacks
+  output: {
+    // path es donde estará la carpeta donde se guardará los archivos
+    // Con path.resolve podemos decir dónde va estar la carpeta y la ubicación del mismo
+    path: path.resolve(__dirname, "dist"),
+    // filename le pone el nombre al archivo final
+    filename: "main.js"
+  },
+  resolve: {
+    // Aqui ponemos las extensiones que tendremos en nuestro proyecto para webpack los lea
+    extensions: [".js"]
+  },
+}
+```
 
+- El flag **—config** indica donde estará nuestro archivo de configuración
 
+```cmd
+npx webpack --mode production --config webpack.config.js
+```
 
+- Para poder hacerlo más amigable el comando puedes crear un script en **package.json**
+
+```JSON
+"scripts": {
+		...
+    "build": "webpack --mode production --config webpack.config.js"
+  },
+```
+
+**RESUMEN:** Puedes crear un archivo webpack.config.js en el cual estarán las configuraciones con las cuales webpack trabajara, entre ellas están los puntos de entrada y salida, extensiones de archivos, entre otras características 
 
 
 
