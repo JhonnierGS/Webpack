@@ -274,7 +274,7 @@ post procesadores son herramientas que procesan el CSS y lo transforman en una n
 
 - Para dar soporte a CSS en webpack debes instalar los siguientes paquetes
 
-```
+```npm
 npm i mini-css-extract-plugin css-loader -D
 ```
 
@@ -282,7 +282,7 @@ npm i mini-css-extract-plugin css-loader -D
 - mini-css-extract-plugin ⇒ Extrae el CSS en archivos
 - Para comenzar debemos agregar las configuraciones de webpack
 
-```
+```javascript
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
