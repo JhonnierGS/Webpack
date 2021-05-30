@@ -396,7 +396,7 @@ npm install url-loader file-loader -D
 
 - Para aplicar esta configuración debes agregar la siguiente información
 
-```javaxscript
+```javascript
 module.exports = {
 	...
   module: {
