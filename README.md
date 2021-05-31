@@ -9,9 +9,9 @@
   5. [HTML en Webpack](#HTML-en-Webpack).
   6. [Loaders para CSS y preprocesadores de CSS](#Loaders-para-CSS-y-preprocesadores-de-CSS).
   7. [Copia de archivos con webpack](#Copia-de-archivos-con-webpack).
-  8. [Loaders de imagenes](#Loaders-de-imagenes).
-  9. [Loaders de fuentes](#Loaders-de-fuentes).
-  10. [optimización](#optimización:-hashes,-compresión-y-minificación-de-archivos).
+  8. [Loaders de imagenes](#loaders-de-imagenes).
+  9. [Loaders de fuentes](#loaders-de-fuentes).
+  10. [optimización](#optimización:-hashes-compresión-y-minificación-de-archivos).
   11. [avegadores y dispositivos](#avegadores-y-dispositivos).
 
 <h2>🤔 ¿Qué es Webpack?</h2>
