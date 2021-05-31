@@ -14,7 +14,7 @@
   10. [optimización](#optimización:-hashes-compresión-y-minificación-de-archivos).
   11. [avegadores y dispositivos](#avegadores-y-dispositivos).
 
-## 🤔¿Qué es Webpack?
+### 🤔¿Qué es Webpack?
   <h4>Ideas/conceptos claves</h4>
 Module bundlers son herramientas de frontend que nos permiten usar archivos con módulos JavaScript, entre otras características y convertiros a un JavaScript el cual el navegador pueda entender
 
