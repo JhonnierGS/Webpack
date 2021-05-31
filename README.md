@@ -178,7 +178,7 @@ npx webpack --mode production --config webpack.config.js
 
 **RESUMEN:** Puedes crear un archivo webpack.config.js en el cual estarán las configuraciones con las cuales webpack trabajara, entre ellas están los puntos de entrada y salida, extensiones de archivos, entre otras características 
 
-<h2>💛 Babel Loader para JavaScript</h2>
+### 💛Babel Loader para JavaScript
 
  - Babel te permite hacer que tu código JavaScript sea compatible con todos los navegadores
  - Debes agregar a tu proyecto las siguientes dependencias
@@ -228,7 +228,7 @@ module: {
 
 **RESUMEN:** Babel te ayuda a transpilar el código JavaScript, a un resultado el cual todos los navegadores lo puedan entender y ejecutar. Trae “extensiones” o plugins las cuales nos permiten tener características más allá del JavaScript común
 
-<h2>🧡 HTML en Webpack</h2>
+### 🧡HTML en Webpack
 
 - Es un plugin que nos facilita la tarea de enlazar los bundles a nuestro template HTML
 
@@ -280,7 +280,7 @@ module.exports = {
 }
 ```
 
-<h2>💙 Loaders para CSS y preprocesadores de CSS</h2>
+### 💙Loaders para CSS y preprocesadores de CSS
 
 ### ideas y conceptos claves
 Un preprocesador CSS es un programa que te permite generar CSS a partir de la syntax única del preprocesador. Existen varios preprocesadores CSS de los cuales escoger, sin embargo, la mayoría de preprocesadores CSS añadirán algunas características que no existen en CSS puro, como variable, mixins, selectores anidados, entre otros. Estas características hacen la estructura de CSS más legible y fácil de mantener.
@@ -331,7 +331,7 @@ module.exports = {
 **RESUMEN:** Puedes dar soporte a CSS en webpack mediante loaders y plugins, además que puedes dar superpoderes al mismo con las nuevas herramientas conocidas como pre procesadores y post procesadores
 
 
-<h2>📁 Copia de archivos con webpack</h2>
+### 📁Copia de archivos con webpack
 
 - Si tienes la necesidad de mover un archivo o directorio a tu proyecto final podemos usar un plugin llamado **“copy-webpack-plugin”**
 - Para instalarlo debemos ejecutar el comando
@@ -366,7 +366,7 @@ module.exports = {
 	- To ⇒ en que ruta dentro de la carpeta final terminara los recursos
 
 
-<h2>🌆 Loaders de imagenes</h2>
+### 🌆Loaders de imagenes
 
 - Puedes usar una forma de importar las imágenes haciendo un import de las mismas y generando una variable
 - No es necesario instalar ninguna dependencia, webpack ya lo tiene incluido debemos agregar la siguiente configuración
@@ -398,7 +398,7 @@ Para incluirlo en el HTML debes hacer lo siguiente
 const imagen = `<img src=`${github}` />`;
 ```
 
-<h2>🔠 Loaders de fuentes</h2>
+### 🔠Loaders de fuentes
 
 - Cuando utilizamos fuentes externas una buena práctica es descargarlas a nuestro proyecto
 	- Debido a que no hara un llamado a otros sitios
@@ -453,7 +453,7 @@ module.exports = {
 }
 ```
 
-<h2>🏗 optimización: hashes, compresión y minificación de archivos</h2>
+### 🏗optimización: hashes compresión y minificación de archivos
 
 - Unos de las razones por que utilizamos webpack es porque nos permite optimizar y comprimir nuestro proyecto
 - Debes utilizar los siguientes paquetes
