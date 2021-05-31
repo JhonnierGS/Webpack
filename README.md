@@ -12,7 +12,7 @@
   8. [Loaders de imagenes](#loaders-de-imagenes).
   9. [Loaders de fuentes](#loaders-de-fuentes).
   10. [optimización](#optimización:-hashes-compresión-y-minificación-de-archivos).
-  11. [avegadores y dispositivos](#avegadores-y-dispositivos).
+  11. [alias](#Webpack-Alias).
 
 ### 🤔¿Qué es Webpack?
   <h4>Ideas/conceptos claves</h4>
@@ -485,11 +485,32 @@ module.exports = {
 
 - Cuando nombremos en la configuración de webpack es importante usar [contenthash] para evitar problemas con la cache
 
+### 🅰Webpack Alias
 
+- alias forma parte del objeto resolve el cual nos permite configurar la forma en que webpack resolverá los módulos incorporados.
+	- resolve.alias - para crear atajos que optimizan el tiempo de búsqueda e incorporación de módulos (commonJS o ES6)
+	- resolve.extensions - para darle prioridad en resolución para con las extensiones donde si hay archivos nombrados igualmente, pero con diferentes extensiones, webpack 	resolverá conforme están listados.
+	
+- Alias ⇒ nos permiten otorgar nombres paths específicos evitando los paths largos
+- Para crear un alias debes agregar la siguiente configuración a webpack
 
+```javascript
+module.exports = {
+	...
+	resolve: {
+		...
+    alias: {
+      '@nombreDeAlias': path.resolve(__dirname, 'src/<directorio>'),
+    },
+	}
+}
+```
 
+- Puedes usarlo en los imports de la siguiente manera
 
-
+```javasacript
+import modulo from "@ejemplo/archivo.js";
+```
 
 
 
