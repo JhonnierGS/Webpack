@@ -4,7 +4,7 @@
 
   1. [¿Qué Webpack?](#qué-es-webpack).
   2. [Conseptos](#Conseptos-basicos).
-  3. [Creando un build con webpack](#Creando-un-build-con-webpack).
+  3. [Creando un build con webpack](#creando-un-build-con-webpack).
   4. [Babel Loader para JavaScript](#Babel-Loader-para-JavaScript).
   5. [HTML en Webpack](#HTML-en-Webpack).
   6. [Loaders para CSS y preprocesadores de CSS](#Loaders-para-CSS-y-preprocesadores-de-CSS).
@@ -83,7 +83,7 @@ Module bundlers son herramientas de frontend que nos permiten usar archivos con 
       
 - Dispone de loader y plugins permitiéndonos preparar particularidades de nuestro proyecto
 
-<h2>👷‍♂️ Creando un build con webpack</h2>
+### 👷‍♂️Creando un build con webpack
 
  - creamos una carpeta desde la terminal con mkdir y luego entramos a ella con cd (le podemos dar cualquier nombre)
 
