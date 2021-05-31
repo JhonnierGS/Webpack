@@ -1,4 +1,19 @@
 # 💾 Webpack
+
+# Tabla de contenido
+
+  1. [¿Qué es Webpack?](#¿Qué es Webpack?)
+  2. [Conseptos basicos](#Conseptos basicos)
+  3. [Creando un build con webpack](#Creando un build con webpack)
+  4. [Babel Loader para JavaScript](#Babel Loader para JavaScript)
+  5. [HTML en Webpack](#HTML en Webpack)
+  6. [Loaders para CSS y preprocesadores de CSS](#Loaders para CSS y preprocesadores de CSS)
+  7. [Copia de archivos con webpack](#Copia de archivos con webpack)
+  8. [Loaders de imagenes](#Loaders de imagenes)
+  9. [Loaders de fuentes](#Loaders de fuentes)
+  10. [optimización: hashes, compresión y minificación de archivos](#optimización: hashes, compresión y minificación de archivos)
+  11. [avegadores y dispositivos](#avegadores-y-dispositivos)
+
 <h2>🤔 ¿Qué es Webpack?</h2>
   <h4>Ideas/conceptos claves</h4>
 Module bundlers son herramientas de frontend que nos permiten usar archivos con módulos JavaScript, entre otras características y convertiros a un JavaScript el cual el navegador pueda entender
@@ -438,15 +453,37 @@ module.exports = {
 }
 ```
 
+<h2>🏗 optimización: hashes, compresión y minificación de archivos</h2>
 
+- Unos de las razones por que utilizamos webpack es porque nos permite optimizar y comprimir nuestro proyecto
+- Debes utilizar los siguientes paquetes
+	- css-minimizer-webpack-plugin ⇒ Nos ayuda a comprimir nuestros archivos finales CSS
+	- terser-webpack-plugin ⇒ Permite minificar de una mejor forma
 
+```NPM
+npm i css-minimizer-webpack-plugin terser-webpack-plugin -D
+```
 
+- Una vez instalado el plugin debemos agregar la siguiente configuración
 
+```javascript
+...
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
+module.exports = {
+	...
+	optimization: {
+    minimize: true,
+    minimizer: [
+      new CssMinimizerPlugin(),
+      new TerserPlugin()
+    ]
+  }
+}
+```
 
-
-
-
+- Cuando nombremos en la configuración de webpack es importante usar [contenthash] para evitar problemas con la cache
 
 
 
