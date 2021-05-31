@@ -14,7 +14,7 @@
   10. [optimización](#optimización:-hashes-compresión-y-minificación-de-archivos).
   11. [avegadores y dispositivos](#avegadores-y-dispositivos).
 
-<h2>🤔 ¿Qué es Webpack?</h2>
+## 🤔 ¿Qué es Webpack?
   <h4>Ideas/conceptos claves</h4>
 Module bundlers son herramientas de frontend que nos permiten usar archivos con módulos JavaScript, entre otras características y convertiros a un JavaScript el cual el navegador pueda entender
 
@@ -52,7 +52,7 @@ Module bundlers son herramientas de frontend que nos permiten usar archivos con 
     
   RESUMEN: Webpack es un module bundler que nos permite trabajar con una variedad de tecnologías web empezando desde HTML y terminando con JS. Además de tener soporte para archivos estáticos
   
-<h2>🧐 Conseptos basicos</h2>
+## 🧐 Conseptos basicos
 
   **Webpack** es un paquete de módulos estáticos para aplicaciones de JS modernas
 
