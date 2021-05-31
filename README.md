@@ -3,7 +3,7 @@
 # Tabla de contenido
 
   1. [¿Qué es Webpack?](#¿QuéesWebpack?)
-  2. [Conseptos basicos](#🧐-Conseptos-basicos)
+  2. [Conseptos basicos](#conseptos-basicos)
   3. [Creando un build con webpack](#Creando-un-build-con-webpack)
   4. [Babel Loader para JavaScript](#Babel-Loader-para-JavaScript)
   5. [HTML en Webpack](#HTML-en-Webpack)
