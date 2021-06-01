@@ -11,7 +11,7 @@
   7. [Copia de archivos con webpack](#Copia-de-archivos-con-webpack).
   8. [Loaders de imagenes](#loaders-de-imagenes).
   9. [Loaders de fuentes](#loaders-de-fuentes).
-  10. [optimización](#optimización:-hashes-compresión-y-minificación-de-archivos).
+  10. [optimización](#optimización-hashes-compresión-y-minificación-de-archivos).
   11. [alias](#Webpack-Alias).
   12. [Variables de entorno](#Variables-de-entorno).
   13. [Webpack watch](#Webpack-watch).
@@ -455,7 +455,7 @@ module.exports = {
 }
 ```
 
-### 🏗optimización:-hashes-compresión-y-minificación-de-archivos
+### 🏗optimización-hashes-compresión-y-minificación-de-archivos
 
 - Unos de las razones por que utilizamos webpack es porque nos permite optimizar y comprimir nuestro proyecto
 - Debes utilizar los siguientes paquetes
