@@ -455,7 +455,7 @@ module.exports = {
 }
 ```
 
-### 🏗optimización: hashes compresión y minificación de archivos
+### 🏗optimización:-hashes-compresión-y-minificación-de-archivos
 
 - Unos de las razones por que utilizamos webpack es porque nos permite optimizar y comprimir nuestro proyecto
 - Debes utilizar los siguientes paquetes
