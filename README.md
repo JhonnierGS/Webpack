@@ -583,6 +583,7 @@ module.exports = {
 
 - Vale la pena recordar que si aplicamos en modo producción se tomara más tiempo porque se optimizaran los recursos
 	- Por ello en modo desarrollo se salta ese paso y es más rápido la compilación
+<<<<<<< HEAD
 
 
 
@@ -606,3 +607,5 @@ module.exports = {
 
 
 
+=======
+>>>>>>> d81c3676aa04ab7226b25000af16ce63838a4662
