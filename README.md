@@ -15,6 +15,8 @@
   11. [alias](#Webpack-Alias).
   12. [Variables de entorno](#Variables-de-entorno).
   13. [Webpack watch](#Webpack-watch).
+  14. [Webpack dev server](#Webpack-dev-server).
+  15. [Webpack DevTools](#Webpack-devtools).
 
 ### 🤔¿Qué es Webpack?
   <h4>Ideas/conceptos claves</h4>
@@ -583,3 +585,65 @@ module.exports = {
 
 - Vale la pena recordar que si aplicamos en modo producción se tomara más tiempo porque se optimizaran los recursos
 	- Por ello en modo desarrollo se salta ese paso y es más rápido la compilación
+
+
+### 🍰Webpack-dev-server
+HTML5 History API permite la manipulación de session history del navegador, es decir las páginas visitadas en el tab o el frame en la cual la página está cargada.
+
+- Cuando trabajamos con webpack deseamos ver los cambios en tiempo real en un navegador
+- Para tener esta característica esta webpack-dev-server
+- Para ello debemos instalarlo
+
+```npm
+npm install webpack-dev-server -D
+```
+
+- posteriormente debemos agregar la siguiente configuración en **webpack.config.dev.js**
+	- Lo hacemos en la configuración de desarrollo debido a que esta caracteristica solo nos ayudara a ver cambios al momento de desarrollarla aplicaicón  
+
+```javascript
+mode.export ={
+	...
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		compress: true,
+		historyApiFallback: true,
+		port: 3000,
+	},
+}
+
+```
+
+- En la configuración podemos observar las siguientes propiedades
+	- **contentBass** => Le dice al servidor donde tiene que servir el contenido, solo es necesario si quieres servir archivos estaticos
+	-  **compress** => Habilita la compresión gzip
+	-  **historyApiFallback** ⇒ cuando estas usando HTML5 History API la página index.html sera mostrada en vez de una respuesta 404
+	-  **Port** ⇒ es el puerto donde vamos a realizar las peticiones
+- Para comenzar a utilizarlo debes agregar el siguiente script a package.json    
+
+```json
+{
+	...
+	"scripts": {
+	...
+	"start": "webpack serve --config webpack.config.dev.js"
+	}
+}
+```
+
+### 🧩Webpack-devtools
+source map es un mapeo que se realiza entre el código original y el código transformado, tanto para archivos JavaScript como para archivos CSS. De esta forma podremos debuggear tranquilamente nuestro código.
+
+- Con las devtools de webpack te permite crear un mapa de tu proyecto y con el podemos
+	- Leer a detalle
+	- Analizar particularidades de lo que está compilando nuestro proyecto
+- Para comenzar debemos ir a webpack.config.js y agregar la propiedad devtool: "source-map"
+	- Esta opción genera un source map el cual posteriormente chrome lo lee y te permite depurar de una mejor forma
+
+
+
+
+
+
+
+
